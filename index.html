@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="assets/js/main.js">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password generator</h1>
+        <div class="wrapper">
+
+            <div class="input-box">
+                <input type="text" disabled>
+                <span class="material-symbols-rounded">copy_all</span>
+            </div>
+
+            <div class="pass-indicator weak"></div>
+
+            <div class="pass-lenght">
+                <div class="details">
+                    <label for="">Password lenght</label>
+                    <span>16</span>
+                </div>
+                <input type="range" min="6" max="32" value="16" step="2">
+            </div>
+
+            <div class="pass-settings">
+                <label for="">Pass Settings</label>
+                <ul class="options">
+                    <li class="option"><input type="checkbox" id="lowercase" checked readonly disabled>
+                        <label for="lowercase">lowercase (a-z)</label>
+                    </li>
+                    <li class="option"><input type="checkbox" id="uppercase">
+                        <label for="uppercase">uppercase (A-Z)</label>
+                    </li>
+                    <li class="option"><input type="checkbox" id="numbers">
+                        <label for="numbers">numbers (0-9)</label>
+                    </li>
+                    <li class="option"><input type="checkbox" id="symbols">
+                        <label for="symbols">symbols (!#$%)</label>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="generate-btn">Generate password</button>
+
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
